@@ -1,8 +1,8 @@
-name: Testing
+name: Testing Flight Validation
 on: push
 
 jobs:
-  test_project:
+  test_flight_validation:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
