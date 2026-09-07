@@ -11,7 +11,7 @@ class FlightTestCase(TestCase):
 
         #create airports
         a1=Airport.objects.create(code='AAA', city='City A')
-        a2=Airport.objects.create(code='BBBc', city='City B')
+        a2=Airport.objects.create(code='BBB', city='City B')
 
         #create flights
         Flight.objects.create(origin=a1, destination=a2, duration=100)
