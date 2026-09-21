@@ -1,4 +1,3 @@
-```markdown
 # Airlinex — Monitoring & Observability
 
 This document describes the observability stack for the Airlinex project: how metrics
