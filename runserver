@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# run local
+# python3 manage.py runserver
+
+# run from docker
+# docker compose exec web python manage.py runserver
+docker compose up
+
+# launch container
+# docker compose exec web bash
