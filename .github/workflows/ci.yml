@@ -5,6 +5,31 @@ on: push
 jobs:
   test_flight_validation:
     runs-on: ubuntu-latest
+
+    services: 
+      postgres:
+        image: postgres:16
+        env:
+          POSGRES_DB: airlinex_db
+          DB_USER: airlinex_user
+          DB_PASS: airlinex_pass
+        ports:
+          - "5432:5432"
+        options: >-
+          --health-cmd "pg_isready -U airlinex_user -d airlinex_db"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      ENGINE: django.db.backends.postgresql
+      DB_NAME: airlinex_db
+      DB_USER: airlinex_user
+      DB_PASSWORD: airlinex_pass
+      DB_HOST: localhost
+      DB_PORT: 5432
+    
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
