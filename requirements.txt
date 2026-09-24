@@ -175,5 +175,4 @@ widgetsnbextension==4.0.15
 wsproto==1.3.2
 django-prometheus
 Django>=5.0,<5.1
-psycopg2-binary
-environ
+django-environ
