@@ -173,6 +173,5 @@ webencodings==0.5.1
 websocket-client==1.9.0
 widgetsnbextension==4.0.15
 wsproto==1.3.2
-django-prometheus
-Django==55.2
-django-environ
+django-prometheus=2.5.0
+
