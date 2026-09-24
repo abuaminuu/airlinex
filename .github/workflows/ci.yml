@@ -12,7 +12,7 @@ jobs:
         env:
           POSTGRES_DB: airlinex_db
           POSTGRES_USER: airlinex_user
-          POSTGRES_PASS: airlinex_pass
+          POSTGRES_PASSWORD: airlinex_pass
         ports:
           - "5432:5432"
         options: >-
