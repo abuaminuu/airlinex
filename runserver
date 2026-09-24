@@ -4,8 +4,10 @@
 # python3 manage.py runserver
 
 # run from docker
+# docker compose  up -d web
+docker compose exec web pip install -r requirements.txt
 # docker compose exec web python manage.py runserver
-docker compose up
+# docker compose up
 
 # launch container
 # docker compose exec web bash
