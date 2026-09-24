@@ -18,7 +18,8 @@ import environ
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 env = environ.Env(
-    DEBUG=(bool, False)
+    DEBUG=(bool, False),
+    ALLOWED_HOSTS=(list, ["localhost", "127.0.0.1", "*"])
 )
 
 environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
