@@ -15,12 +15,12 @@ jobs:
           POSTGRES_PASS: airlinex_pass
         ports:
           - "5432:5432"
-      options: >-
-        --health-cmd "pg_isready -U airlinex_user -d airlinex_db"
-        --health-interval 5s
-        --health-timeout 5s
-        --health-retries 5
-        
+        options: >-
+          --health-cmd "pg_isready -U airlinex_user -d airlinex_db"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+
     env:
       ENGINE: django.db.backends.postgresql
       DB_NAME: airlinex_db
