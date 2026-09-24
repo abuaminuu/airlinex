@@ -24,6 +24,8 @@ services:
         timeout: 5s
         retries: 5
         start_period: 30s
+      ports:
+        - "5432:5432"
       networks:
         - airlinex-network
    
