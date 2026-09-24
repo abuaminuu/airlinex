@@ -10,9 +10,9 @@ jobs:
       postgres:
         image: postgres:16
         env:
-          POSGRES_DB: airlinex_db
-          DB_USER: airlinex_user
-          DB_PASS: airlinex_pass
+          POSTGRES_DB: airlinex_db
+          POSTGRES_USER: airlinex_user
+          POSTGRES_PASS: airlinex_pass
         ports:
           - "5432:5432"
         options: >-
